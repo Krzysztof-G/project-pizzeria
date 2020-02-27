@@ -86,16 +86,16 @@
         /* prevent default action for event */
         event.preventDefault();
         /* toggle active class on element of thisProduct */
-        thisProduct.element.classList.add('active');
+        thisProduct.element.classList.add(classNames.menuProduct.wrapperActive);
         /* find all active products */
         const activeProducts = document.querySelectorAll('.product.active');
         console.log('activeProducts', activeProducts);
         /* START LOOP: for each active product */
         for (let activeProduct of activeProducts){
         /* START: if the active product isn't the element of thisProduct */
-          if (activeProduct != thisProduct) {
+          if (activeProduct != thisProduct.element) {
           /* remove class active for the active product */
-            activeProducts.classList.remove('active');
+            activeProduct.classList.remove(classNames.menuProduct.wrapperActive);
           /* END: if the active product isn't the element of thisProduct */
           }
         /* END LOOP: for each active product */

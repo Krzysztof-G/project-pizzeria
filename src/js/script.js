@@ -176,6 +176,7 @@
           }
         }
       }
+      this.priceElem.innerHTML = price;
     }
   }
 

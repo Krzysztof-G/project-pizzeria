@@ -162,21 +162,23 @@
           } else if (!optionSelected && option.default) {
             price = price - option.price;
           }
-        }
-        const images = document.querySelectorAll('.' + paramId + '-' + optionId);
 
-        if (optionSelected) {
-          for (let image of images) {
-            image.classList.add(classNames.menuProduct.imageVisible);
-          }
-        } else {
-          for (let image of images) {
-            image.classList.remove(classNames.menuProduct.imageVisible);
+          const images = document.querySelectorAll('.' + paramId + '-' + optionId);
+
+          if (optionSelected) {
+            for (let image of images) {
+              image.classList.add(classNames.menuProduct.imageVisible);
+            }
+          } else {
+            for (let image of images) {
+              image.classList.remove(classNames.menuProduct.imageVisible);
+            }
           }
         }
       }
     }
   }
+
 
   const app = {
     initMenu: function(){

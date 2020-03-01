@@ -201,7 +201,7 @@
 
       thisWidget.getElements(element);
       thisWidget.setValue(thisWidget.input.value);
-      
+      thisWidget.initActions();
 
       console.log('AmountWidget:', thisWidget);
       console.log('constructor arguments', element);
@@ -223,8 +223,12 @@
 
       /*TODO add validation */
 
-      thisWidget.value = newValue;
-      thisWidget.announce();
+      if (newValue >= settings.amountWidget.defaultMin && newValue <= settings.amountWidget.defaultMax) {
+
+        thisWidget.value = newValue;
+        thisWidget.announce();
+
+      }
       thisWidget.input.value = thisWidget.value;
     }
 

@@ -387,7 +387,7 @@
       });
       thisCart.dom.form.addEventListener('submit', function(event){
         event.preventDefault();
-        thisCart.sentOrder();
+        thisCart.sendOrder();
       });
     }
     add(menuProduct){
@@ -432,7 +432,7 @@
         products: [],
       };
 
-      for(let cartProduct of thisCart.products){
+      for(let cartProduct in thisCart.products){
         payload.products.push(cartProduct.getData());
       }
 

@@ -1,3 +1,5 @@
+// global Handlebars, utils, dataSource
+
 export const select = {
   templateOf: {
     menuProduct: '#template-menu-product',
@@ -74,6 +76,8 @@ export const settings = {
 };
 
 export const templates = {
+  // eslint-disable-next-line no-undef
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  // eslint-disable-next-line no-undef
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
 };

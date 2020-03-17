@@ -85,7 +85,7 @@
           "type": "checkboxes",
           "options": {
             "olives": {
-              "label": "Olives",
+              "label": "Green - Olives",
               "price": 2,
               "default": true
             },
@@ -191,7 +191,7 @@
               "default": true
             },
             "olives": {
-              "label": "Olives",
+              "label": "Black - Olives",
               "price": 1,
               "default": true
             },

@@ -7,8 +7,8 @@ class HourPicker extends BaseWidget {
     super(wrapper, settings.hours.open);
     const thisWidget = this;
 
-    thisWidget.dom.input = thisWidget.dom.wrapper.querySelector(select.widgets.hourPicker.input);
-    thisWidget.dom.output = thisWidget.dom.wrapper.querySelector(select.widgets.hourPicker.output);
+    thisWidget.dom.input = thisWidget.dom.wrapper.querySelector(select.hourPicker.input);
+    thisWidget.dom.output = thisWidget.dom.wrapper.querySelector(select.hourPicker.output);
 
     thisWidget.initPlugin();
 
@@ -18,6 +18,7 @@ class HourPicker extends BaseWidget {
   initPlugin() {
     const thisWidget = this;
 
+    // eslint-disable-next-line no-undef
     rangeSlider.create(thisWidget.dom.input);
 
 

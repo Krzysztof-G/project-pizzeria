@@ -138,7 +138,7 @@ class Booking {
       allAvailable = true;
     }
 
-    for(let table of thisBooking.dom.tables){
+    for (let table of thisBooking.dom.tables){
       let tableId = table.getAttribute(settings.booking.tableIdAttribute);
       if(!isNaN(tableId)){
         tableId = parseInt(tableId);
@@ -170,7 +170,7 @@ class Booking {
     thisBooking.dom.datePicker = thisBooking.dom.wrapper.querySelector(select.datePicker.wrapper);
     thisBooking.dom.hourPicker = thisBooking.dom.wrapper.querySelector(select.hourPicker.wrapper);
 
-    thisBooking.dom.tables = thisBooking.dom.wrapper.querySelector(select.booking.tables);
+    thisBooking.dom.tables = thisBooking.dom.wrapper.querySelectorAll(select.booking.tables);
   }
 
   initWidgets() {
@@ -180,7 +180,7 @@ class Booking {
     thisBooking.datePicker = new DatePicker(thisBooking.dom.datePicker);
     thisBooking.hourPicker = new HourPicker(thisBooking.dom.hourPicker);
 
-    thisBooking.dom.wrapper.addEventListener('update', function(){
+    thisBooking.dom.wrapper.addEventListener('updated', function(){
       thisBooking.updateDOM();
     });
   }

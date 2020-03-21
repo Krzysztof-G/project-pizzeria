@@ -183,8 +183,65 @@ class Booking {
     thisBooking.dom.wrapper.addEventListener('updated', function(){
       thisBooking.updateDOM();
     });
+    thisBooking.tableReservation();
   }
 
+  tableReservation(){
+    const thisBooking = this;
+
+    for(let table of thisBooking.dom.tables){
+      table.addEventListener('click', function(){
+
+        if(table.classList.contains(classNames.booking.tableBooked)){
+          alert('Przepraszamy ten stolik jest zarezerwowany. Prosimy wybrać inny stolik');
+        }else{
+          table.classList.add(classNames.booking.tableBooked);
+
+          thisBooking.tableNo = parseInt(table.getAttribute(settings.booking.tableIdAttribute));
+
+          thisBooking.sendReservation();
+        }
+      });
+    }
+  }
+
+  sendReservation(){
+    const thisBooking = this;
+
+    const url = settings.db.url + '/' + settings.db.booking;
+
+    const payload = {
+      date: thisBooking.datePicker.value,
+      hour: thisBooking.hourPicker.value,
+      table: thisBooking.tableNo,
+      ppl: thisBooking.peopleAmount.correctValue,
+      duration: thisBooking.hoursAmount.correctValue,
+    };
+    console.log('payload', payload);
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    };
+
+    fetch(url, options)
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(parsedResponse){
+        console.log('parsedResponse', parsedResponse);
+        thisBooking.makeBooked(payload.date, payload.hour, payload.duration, payload.table);
+      });
+
+    for(let table of thisBooking.dom.tables){
+      if(table.getAttribute(settings.booking.tableIdAttribute) == thisBooking.tableNo){
+        table.classList.add(classNames.booking.tableBooked);
+      }
+    }
+  }
 }
 
 export default Booking;

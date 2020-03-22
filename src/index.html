@@ -64,7 +64,7 @@
 
     <div id="pages">
       <section id="main">
-        <div class="main"></div>
+        <div id="main-page" class="main-wrapper container"></div>
       </section>
       <section id="order">
         <div id="product-list" class="product-list container"></div>
@@ -74,7 +74,8 @@
       </section>
     </div>
 
-      <div class="main-wrapper container">
+    <script id="template-main" type="text/x-handlebars-template">
+      <div class="main">
         <div class="box">
           <div class="row-box">
             <div class="image-box">
@@ -92,6 +93,7 @@
             </div>
         </div>
         </div>
+    </script>
 
     <script id="template-booking-widget" type="text/x-handlebars-template">
       <div class="booking-widget">

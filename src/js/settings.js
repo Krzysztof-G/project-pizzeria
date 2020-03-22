@@ -5,6 +5,7 @@ export const select = {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product',
     bookingWidget: '#template-booking-widget',
+    main: '#template-main',
   },
   containerOf: {
     menu: '#product-list',
@@ -128,4 +129,7 @@ export const templates = {
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   // eslint-disable-next-line no-undef
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+  // eslint-disable-next-line no-undef
+  main: Handlebars.compile(document.querySelector(select.templateOf.main).innerHTML),
+
 };

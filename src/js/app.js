@@ -1,7 +1,9 @@
-import {settings, select, classNames} from './settings.js';
+import {settings, select, classNames, templates} from './settings.js';
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import Booking from './components/Booking.js';
+import utils from './utils.js';
+
 
 const app = {
   initPages: function(){
@@ -108,6 +110,14 @@ const app = {
       app.cart.add(event.detail.product );
     });
   },
+
+  initHome: function() {
+    const generatedHTML = templates.main();
+    const homePage = utils.createDOMFromHTML(generatedHTML);
+    const homeContainer = document.querySelector('#main-page');
+    homeContainer.appendChild(homePage);
+  },
+
   init: function(){
     const thisApp = this;
     //console.log('*** App starting ***');
@@ -119,6 +129,7 @@ const app = {
     thisApp.initPages();
 
     thisApp.initData();
+    thisApp.initHome();
     thisApp.initCart();
     thisApp.initBooking();
   },

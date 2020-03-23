@@ -1,4 +1,17 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+.cart {
+  display: none;
+}
+
+.main-nav a:nth-child(2) {
+  display: none;
+}
+.main-nav a:nth-child(3) {
+  display: none;
+}
 
 .main-wrapper {
   margin: ($base-size * 3.5) auto;
@@ -7,3 +20,156 @@
   border-bottom: 1px solid lighten($color-dark, 70%);
   border-radius: $radius;
 }
+.box {
+  display: flex;
+  justify-content: center;
+  max-width: 680px;
+  margin-bottom: 100px;
+
+}
+
+.new-box {
+  font-family: $font-text;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #ff7675;
+  width: 600px;
+  height: 120px;
+  border-radius: 5px;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.new-box h1 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.new-box h2 {
+  margin-top: 0;
+  font-size: small;
+}
+.row-box {
+  font-family: $font-text;
+  display: inline-flex;
+}
+.image-box {
+  position: relative;
+}
+.image-box img {
+  width: 310px;
+  height: 140px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+.image-box a {
+  position: absolute;
+  color: white;
+  left: 65px;
+  top: 50px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.image-box:hover {
+  .sentence {
+    display: block;
+    top: 60px;
+  }
+}
+
+.image-box:hover {
+  a {
+    position: absolute;
+    top: 35px;
+  }
+}
+
+.slide-show {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 250px;
+}
+
+
+.slide-box {
+  display: flex;
+  justify-content: center;
+  margin-left: 29px;
+  width: 600px;
+}
+
+.description {
+  font-family: $font-text;
+  display: flex;
+  flex-direction: column;
+  margin-left: 270px;
+}
+
+
+.pizza-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.photo-inner {
+  margin: 5px 5px 5px 5px;
+}
+
+.photo-inner img {
+  height: 200px;
+  width: 175px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+.final-box {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.final {
+  color: #ff7675;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 2px;
+  width: 2px;
+}
+
+.icons .fas {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.fa-heart {
+  color: #ff7675;
+}
+
+.fa-share-alt {
+  color: white;
+}
+

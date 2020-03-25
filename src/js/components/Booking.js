@@ -165,6 +165,8 @@ class Booking {
     const generatedDOM = utils.createDOMFromHTML(generatedHTML);
     thisBooking.dom.wrapper.appendChild(generatedDOM);
 
+    thisBooking.phone = thisBooking.dom.wrapper.querySelector(select.cart.phone);
+    thisBooking.address = thisBooking.dom.wrapper.querySelector(select.cart.address);
     thisBooking.dom.peopleAmount = thisBooking.dom.wrapper.querySelector(select.booking.peopleAmount);
     thisBooking.dom.hoursAmount = thisBooking.dom.wrapper.querySelector(select.booking.hoursAmount);
     thisBooking.dom.datePicker = thisBooking.dom.wrapper.querySelector(select.datePicker.wrapper);
@@ -183,6 +185,11 @@ class Booking {
     thisBooking.dom.wrapper.addEventListener('updated', function(){
       thisBooking.updateDOM();
     });
+    thisBooking.dom.wrapper.addEventListener('submit', function(event){
+      event.preventDefault();
+      thisBooking.sendReservation();
+    });
+
     thisBooking.tableReservation();
   }
 
@@ -199,7 +206,6 @@ class Booking {
 
           thisBooking.tableNo = parseInt(table.getAttribute(settings.booking.tableIdAttribute));
 
-          thisBooking.sendReservation();
         }
       });
     }
@@ -211,11 +217,14 @@ class Booking {
     const url = settings.db.url + '/' + settings.db.booking;
 
     const payload = {
+      address: thisBooking.address.value,
+      phone:  thisBooking.phone.value,
       date: thisBooking.datePicker.value,
       hour: thisBooking.hourPicker.value,
       table: thisBooking.tableNo,
       ppl: thisBooking.peopleAmount.correctValue,
       duration: thisBooking.hoursAmount.correctValue,
+
     };
     console.log('payload', payload);
 

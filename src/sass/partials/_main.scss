@@ -87,24 +87,27 @@
   }
 }
 
-.slide-show {
-  max-width: 1000px;
+.slider{
+  padding-bottom: 50px;
+}
+
+.slide-photo{
+  padding-top: 150px;
+}
+
+.photo{
   position: relative;
-  margin-top: 250px;
+  background-color: yellow;
+  align-items: center;
 }
 
-.slide-box {
-  display: flex;
-  justify-content: center;
-  margin-left: 29px;
-  width: 600px;
-}
-
-.description {
-  font-family: $font-text;
-  display: flex;
-  flex-direction: column;
-  margin-left: 270px;
+.photo img{
+  position: absolute;
+  width: 310px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 0;
 }
 
 .pizza-photos {
@@ -141,26 +144,55 @@
   text-decoration: none;
 }
 
-.icons {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 2px;
-  width: 2px;
-}
-
-.icons .fas {
-  font-size: 30px;
-  padding: 10px;
-}
 
 .fa-heart {
+  position: absolute;
+  font-size: 30px;
+  margin: 80px 0px 0px -120px;
   color: #ff7675;
 }
 
 .fa-share-alt {
+  position: absolute;
+  font-size: 30px;
+  margin: 80px 0px 0px -80px;
   color: white;
 }
 
+.slide-title{
+  margin: 0;
+}
+
+.description{
+  margin: 0 5px 0 5px;
+  height: 200px;
+  font-size: 12px;
+  font-family: $font-text;
+}
+
+.slide-paragraph{
+  margin: 5px 0 0 0;
+  height: 100px;
+}
+
+.owl-carousel{
+  margin: 0;
+  left: 50%;
+  text-align: justify;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.owl-stage-outer{
+  max-height: 200px;
+}
+
+.owl-stage{
+  max-height: 200px;
+}
+
+.owl-item {
+  position: absolute;
+  max-width: 300px;
+  max-height: 200px;
+}

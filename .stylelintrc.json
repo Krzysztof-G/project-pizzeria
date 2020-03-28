@@ -1,6 +1,11 @@
 {
   "plugins": [
-    "stylelint-scss"
+    "stylelint-scss",
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
   ],
   "rules": {
     "block-no-empty": true,

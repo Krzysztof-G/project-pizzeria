@@ -205,7 +205,7 @@ class Booking {
           table.classList.add(classNames.booking.tableBooked);
 
           thisBooking.tableNo = parseInt(table.getAttribute(settings.booking.tableIdAttribute));
-
+          
         }
       });
     }

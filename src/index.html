@@ -9,6 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+  <link rel="stylesheet" href="vendor/owl.carousel.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -93,63 +94,33 @@
             </div>
         </div>
         <section class = "slider">
-          <div class="container">
-            <div class="slide-show">
-              <div class="slide-box">
-                <div class="slide-photo">
-                  <div class="photo">
-                    <img src="vendor/pizza-3.jpg" style="width:45%">
-                  </div>
-                  <div class="description">
-                    <h1 class="slide-title">Świetna obsługa</h1>
-                    <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="signature">- Jan Kowalski</p>
-                  </div>
-                </div>
-                </div>
+          <div class="slide-photo">
+            <div class="photo">
+              <img src="vendor/pizza-3.jpg" style="width:45%">
+            </div>
+            </div>
 
-              <div class="slide-box">
-                <div class="slide-photo">
-                  <div class="photo">
-                    <img src="vendor/pizza-3.jpg" style="width:45%">
-                  </div>
-                  <div class="description">
-                    <h1 class="slide-title">Niesamowite jedzenie</h1>
-                    <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="signature">- Artur Nowak</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide-box">
-              <div class="slide-photo">
-                <div class="photo">
-                  <img src="vendor/pizza-3.jpg" style="width:45%">
-                </div>
-                <div class="description">
-                  <h1 class="slide-title">Usługi na najwyzszym poziomie</h1>
-                  <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <p class="signature">- Marlena Arciś</p>
-                </div>
-              </div>
+            <div class="owl-carousel owl-theme">
+              <div class="description"> <h1 class="slide-title">Świetna obsługa</h1>
+                <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="signature">- Jan Kowalski</p> </div>
+              <div class="description"> <h1 class="slide-title">Niesamowite jedzenie</h1>
+                <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="signature">- Artur Nowak</p> </div>
+              <div class="description"> <h1 class="slide-title">Usługi na najwyzszym poziomie</h1>
+                <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="signature">- Marlena Arciś</p> </div>
             </div>
-          </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-          </div>
+
+
         </section>
         <section class="photo-grid">
           <div class="container">
             <div class="pizza-photos">
               <div class="photo-inner">
                 <img src="vendor/pizza-4.jpg" alt="pizza">
-                <div class="icons">
                   <a href="#"><i class="fas fa-heart"></i></a>
                   <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
               </div>
               <div class="photo-inner">
                 <img src="vendor/pizza-5.jpg" alt="pizza">
@@ -352,7 +323,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js"></script>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="vendor/owl.carousel.js"></script>
+  <script src="vendor/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/app.js" type="module"></script>
+  <script>
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+    });
+  </script>
 </body>
 </html>

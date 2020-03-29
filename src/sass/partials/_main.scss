@@ -176,23 +176,8 @@
 }
 
 .owl-carousel{
-  margin: 0;
-  left: 50%;
+  margin-left: 300px;
+  width: 300px;
+  word-wrap: break-word;
   text-align: justify;
-  max-width: 300px;
-  max-height: 200px;
-}
-
-.owl-stage-outer{
-  max-height: 200px;
-}
-
-.owl-stage{
-  max-height: 200px;
-}
-
-.owl-item {
-  position: absolute;
-  max-width: 300px;
-  max-height: 200px;
 }

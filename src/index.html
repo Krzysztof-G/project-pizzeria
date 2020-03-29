@@ -331,7 +331,12 @@
   <script src="js/app.js" type="module"></script>
   <script>
     $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      dots: true,
+      loop: true,
+      autoplay: true,
+    });
     });
   </script>
 </body>

@@ -154,6 +154,36 @@ class Booking {
         table.classList.remove(classNames.booking.tableBooked);
       }
     }
+    thisBooking.sliderColor();
+  }
+
+  sliderColor() {
+    const thisBooking = this;
+
+    const bookedHours = thisBooking.booked[thisBooking.date];
+    console.log(bookedHours);
+    const sliderColors = [];
+
+    thisBooking.dom.rangeSlider = thisBooking.dom.wrapper.querySelector('.range-Slider.min.js');
+
+    const slider = thisBooking.dom.rangeSlider;
+
+    for (let bookedHour in bookedHours) {
+      const firstInterval = ((bookedHour - 12) * 100) / 12;
+      const secondInterval = ((bookedHour -12 + 0.5) * 100) / 12;
+
+      if (bookedHours[bookedHour].length <= 1) {
+        sliderColors.push(
+          '/* ' +
+          bookedHour +
+          '*/#ea2027' +
+          firstInterval +
+          '%, #ea2027' +
+          secondInterval +
+          '%'
+        );
+      }
+    }
   }
 
   render(element) {
@@ -205,7 +235,7 @@ class Booking {
           table.classList.add(classNames.booking.tableBooked);
 
           thisBooking.tableNo = parseInt(table.getAttribute(settings.booking.tableIdAttribute));
-          
+
         }
       });
     }

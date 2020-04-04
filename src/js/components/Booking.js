@@ -164,7 +164,7 @@ class Booking {
     console.log(bookedHours);
     const sliderColors = [];
 
-    thisBooking.dom.rangeSlider = thisBooking.dom.wrapper.querySelector('.range-Slider.min.js');
+    thisBooking.dom.rangeSlider = thisBooking.dom.wrapper.querySelector('.rangeSlider');
 
     const slider = thisBooking.dom.rangeSlider;
 
@@ -176,14 +176,44 @@ class Booking {
         sliderColors.push(
           '/* ' +
           bookedHour +
-          '*/#ea2027' +
+          '*/#009432' +
           firstInterval +
-          '%, #ea2027' +
+          '%, #009432' +
+          secondInterval +
+          '%'
+        );
+      }
+      else if (bookedHours[bookedHour].length === 2) {
+        sliderColors.push(
+          '/* ' +
+          bookedHour +
+          '*/#FFC312' +
+          firstInterval +
+          '%, #FFC312' +
+          secondInterval +
+          '%'
+        );
+      }
+      else if (bookedHours[bookedHour].length === 3) {
+        sliderColors.push(
+          '/* ' +
+          bookedHour +
+          '*/#EA2027' +
+          firstInterval +
+          '%, #EA2027' +
           secondInterval +
           '%'
         );
       }
     }
+    sliderColors.sort();
+
+    const greenOrangeRedString = sliderColors.join();
+    console.log(greenOrangeRedString);
+
+    slider.style.background = 'linear-gradient(to right, ' + greenOrangeRedString + ')';
+
+    console.log(sliderColors);
   }
 
   render(element) {

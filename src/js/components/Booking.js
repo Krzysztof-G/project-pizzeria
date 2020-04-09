@@ -176,33 +176,33 @@ class Booking {
         sliderColors.push(
           '/* ' +
           bookedHour +
-          '*/#009432' +
+          '*/#009432 ' +
           firstInterval +
-          '%, #009432' +
+          '%, #009432 ' +
           secondInterval +
-          '%'
+          '% '
         );
       }
       else if (bookedHours[bookedHour].length === 2) {
         sliderColors.push(
           '/* ' +
           bookedHour +
-          '*/#FFC312' +
+          '*/#FFC312 ' +
           firstInterval +
-          '%, #FFC312' +
+          '%, #FFC312 ' +
           secondInterval +
-          '%'
+          '% '
         );
       }
       else if (bookedHours[bookedHour].length === 3) {
         sliderColors.push(
           '/* ' +
           bookedHour +
-          '*/#EA2027' +
+          '*/ #EA2027 ' +
           firstInterval +
-          '%, #EA2027' +
+          '%, #EA2027 ' +
           secondInterval +
-          '%'
+          '% '
         );
       }
     }

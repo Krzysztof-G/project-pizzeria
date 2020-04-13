@@ -1,1 +1,409 @@
+@media (min-width: 601px) and (max-width: 1024px) {
+  .box {
+    .new-box {}
+  }
+}
 
+@media (min-width: 411px) and (max-width: 600px) {
+  .header {
+    .container {
+      .header__wrapper {
+        padding-bottom: 70px;
+      }
+    }
+
+    .cart {
+      top: 100px;
+      left: 25px;
+    }
+  }
+
+  .main-nav {
+    padding-left: 6px;
+  }
+
+  .main-wrapper {
+    padding: 52px 42px;
+  }
+
+  .box {
+    .new-box {
+      top: 610px;
+      width: 350px;
+    }
+
+    .row-box {
+      .image-box {
+        img {
+          width: 200px;
+        }
+
+        a {
+          left: 35px;
+          top: 55px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    .slide-photo {
+      padding-top: 70px;
+    }
+
+    .owl-carousel {
+      top: 240px;
+      margin-left: 6px;
+    }
+  }
+
+  .photo-grid {
+    .pizza-photos {
+      padding-top: 160px;
+    }
+
+    .photo-inner {
+      img {
+        width: 310px;
+      }
+
+      .fa-heart {
+        font-size: 30px;
+        margin: 85px 0px 0px -190px;
+        color: #ff7675;
+      }
+
+      .fa-share-alt {
+        font-size: 30px;
+        margin: 85px 0px 0px -150px;
+        color: white;
+      }
+    }
+  }
+
+  .booking-options {
+    label {
+      input {
+        font-size: 18px;
+        margin: 0 15px;
+      }
+    }
+
+    a {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .floor-plan {
+    margin-left: -5px;
+    margin-right: -18px;
+  }
+
+  .order-confirmation {
+    input {
+      padding-top: 15px;
+      margin-top: 10px;
+      margin-left: -8px;
+      width: 320px;
+    }
+
+    button {
+      margin-top: 10px;
+      margin-left: 110px;
+    }
+  }
+}
+
+@media (min-width: 351px) and (max-width: 410px) {
+  .header {
+    .container {
+      .header__wrapper {
+        padding-bottom: 70px;
+      }
+    }
+
+    .cart {
+      top: 100px;
+      left: 10px;
+    }
+  }
+
+  .main-wrapper {
+    padding: 42px 22px;
+  }
+
+  .main-nav {
+    :nth-child(3) {
+      padding-left: 17px;
+    }
+
+    a {
+      font-size: 12px;
+      text-align: center;
+      width: 90px;
+    }
+  }
+
+  .box {
+    .new-box {
+      top: 605px;
+      width: 290px;
+    }
+
+    .row-box {
+      .image-box {
+        img {
+          width: 180px;
+        }
+
+        a {
+          left: 25px;
+          top: 55px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    .slide-photo {
+      padding-top: 80px;
+    }
+
+    .owl-carousel {
+      top: 240px;
+      margin-left: 6px;
+    }
+  }
+
+  .photo-grid {
+    .pizza-photos {
+      padding-top: 160px;
+    }
+
+    .photo-inner {
+      img {
+        width: 310px;
+      }
+
+      .fa-heart {
+        font-size: 30px;
+        margin: 85px 0px 0px -190px;
+        color: #ff7675;
+      }
+
+      .fa-share-alt {
+        font-size: 30px;
+        margin: 85px 0px 0px -150px;
+        color: white;
+      }
+    }
+  }
+
+  .booking-form {
+    width: 300px;
+    margin-left: -20px;
+
+    .date-picker {
+      margin: 0 10px 0 -10px;
+    }
+
+    .time-picker {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .booking-options {
+    label {
+      input {
+        font-size: 18px;
+        margin: 0 15px;
+      }
+    }
+
+    a {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .floor-plan {
+    margin-left: -10px;
+    margin-right: -18px;
+  }
+
+  .order-confirmation {
+    margin-left: -23px;
+
+    input {
+      padding-top: 15px;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 320px;
+    }
+
+    button {
+      margin-top: 10px;
+      margin-left: 125px;
+    }
+  }
+
+}
+
+@media (min-width: 1px) and (max-width: 350px) {
+  .header {
+    .container {
+      .header__wrapper {
+        padding-bottom: 70px;
+      }
+    }
+
+    .cart {
+      width: 280px;
+      top: 100px;
+      left: -10px;
+    }
+  }
+
+  .main-wrapper {
+    padding: 42px 5px;
+  }
+
+  .main-nav {
+    :nth-child(1) {
+      padding-left: 18px;
+    }
+
+    :nth-child(2) {
+      padding-left: 15px;
+    }
+
+    :nth-child(3) {
+      padding-left: 7px;
+    }
+
+    a {
+      font-size: 12px;
+      text-align: center;
+      width: 70px;
+    }
+  }
+
+  .box {
+    .new-box {
+      top: 605px;
+      width: 290px;
+    }
+
+    .row-box {
+      .image-box {
+        img {
+          width: 155px;
+        }
+
+        a {
+          left: 23px;
+          top: 60px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    .slide-photo {
+      padding-top: 80px;
+
+      .photo {
+        img {
+          padding-left: 5px;
+          width: 290px;
+        }
+      }
+    }
+
+    .owl-carousel {
+      top: 240px;
+      margin-left: -1px;
+    }
+  }
+
+  .photo-grid {
+    .pizza-photos {
+      padding-top: 160px;
+    }
+
+    .photo-inner {
+      img {
+        width: 285px;
+      }
+
+      .fa-heart {
+        font-size: 30px;
+        margin: 80px 0px 0px -175px;
+        color: #ff7675;
+      }
+
+      .fa-share-alt {
+        font-size: 30px;
+        margin: 80px 0px 0px -135px;
+        color: white;
+      }
+    }
+  }
+
+  .booking-form {
+    width: 250px;
+    margin-left: -20px;
+
+    .date-picker {
+      margin: 0 10px 0 -30px;
+    }
+
+    .time-picker {
+      margin: 0 -20px 0 10px;
+    }
+  }
+
+  .booking-options {
+    width: 250px;
+
+    label {
+      input {
+        font-size: 18px;
+        margin: 0 0 0 10px;
+      }
+    }
+
+    a {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .floor-plan {
+    width: 280px;
+    margin-left: -15px;
+    margin-right: -18px;
+  }
+
+  .order-confirmation {
+    margin-left: -15px;
+
+    input {
+      padding-top: 15px;
+      margin-top: 10px;
+      width: 280px;
+    }
+
+    button {
+      margin-top: 10px;
+      margin-left: 100px;
+    }
+  }
+}

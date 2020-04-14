@@ -1,156 +1,3 @@
-@media (min-width: 611px) and (max-width: 1024px) {
-  .header {
-    .container {
-      .header__wrapper {
-        padding-bottom: 70px;
-      }
-    }
-
-    .cart {
-      top: 98px;
-      left: 15px;
-    }
-  }
-
-  .main-nav {
-    a {
-      margin: 0 15px;
-    }
-  }
-
-  .main-wrapper {
-    padding: 52px 42px;
-  }
-
-  .box {
-    .new-box {
-      top: 610px;
-      width: 341px;
-    }
-
-    .row-box {
-      .image-box {
-        img {
-          width: 200px;
-        }
-
-        a {
-          left: 35px;
-          top: 55px;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  .slider {
-    padding: 0 20px;
-    width: 330px;
-
-    .slide-photo {
-      padding-top: 70px;
-
-      .photo {
-        img {
-          width: 291px;
-        }
-      }
-    }
-
-    .owl-carousel {
-      width: 300px;
-      top: 240px;
-      margin: 0px;
-    }
-  }
-
-  .photo-grid {
-    .pizza-photos {
-      padding-top: 190px;
-      padding-left: 10px;
-    }
-
-    .photo-inner {
-      img {
-        width: 291px;
-        margin-left: -10px;
-      }
-
-      .fa-heart {
-        font-size: 30px;
-        margin: 80px 0px 0px -185px;
-        color: #ff7675;
-      }
-
-      .fa-share-alt {
-        font-size: 30px;
-        margin: 80px 0px 0px -145px;
-        color: white;
-      }
-    }
-  }
-
-  .product {
-    .product__header {
-      h3 {
-        font-size: 20px;
-      }
-    }
-
-    .product__images {
-      width: 150px;
-
-      img {
-        width: 150px;
-      }
-    }
-
-    .product__wrapper {
-      width: 320px;
-    }
-
-    .widget-amount {
-      width: 150px;
-    }
-
-    .btn-primary {
-      width: 100px;
-    }
-
-  }
-
-  .booking-options {
-    label {
-      input {
-        font-size: 18px;
-        margin: 0 5px;
-      }
-    }
-
-    a {
-      font-size: 15px;
-      margin-bottom: 15px;
-      margin-right: 5px;
-    }
-
-  }
-
-
-  .order-confirmation {
-    input {
-      padding-top: 15px;
-      margin-top: 10px;
-      margin-left: 2px;
-      width: 315px;
-    }
-
-    button {
-      margin-top: 10px;
-      margin-left: 115px;
-    }
-  }
-}
-
 @media (min-width: 376px) and (max-width: 610px) {
   .header {
     .container {
@@ -204,7 +51,7 @@
   }
 
   .slider {
-    padding: 0 20px;
+    padding: 0 15px;
 
     .slide-photo {
       padding-top: 80px;
@@ -279,7 +126,7 @@
 
   .booking-form {
     width: 330px;
-    margin-left: 0;
+    margin-left: -5px;
 
     .date-picker {
       margin: 0 10px 0 -10px;

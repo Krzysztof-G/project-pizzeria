@@ -44,34 +44,35 @@
   }
 
   .slider {
-    width: 341px;
+    padding: 0 20px;
+    width: 330px;
 
     .slide-photo {
       padding-top: 70px;
-      padding-left: 10px;
 
       .photo {
         img {
-          width: 320px;
+          width: 291px;
         }
       }
     }
 
     .owl-carousel {
+      width: 300px;
       top: 240px;
-      margin: 0 22px;
+      margin: 0px;
     }
   }
 
   .photo-grid {
     .pizza-photos {
-      padding-top: 160px;
+      padding-top: 190px;
       padding-left: 10px;
     }
 
     .photo-inner {
       img {
-        width: 301px;
+        width: 291px;
         margin-left: -10px;
       }
 
@@ -134,22 +135,18 @@
 
   }
 
-  .floor-plan {
-    margin-left: 4px;
-    margin-right: -18px;
-  }
 
   .order-confirmation {
     input {
       padding-top: 15px;
       margin-top: 10px;
       margin-left: 2px;
-      width: 325px;
+      width: 315px;
     }
 
     button {
       margin-top: 10px;
-      margin-left: 120px;
+      margin-left: 115px;
     }
   }
 }
@@ -207,25 +204,28 @@
   }
 
   .slider {
+    padding: 0 20px;
+
     .slide-photo {
       padding-top: 80px;
 
       .photo {
         img {
-          width: 330px;
+          width: 290px;
         }
       }
     }
 
     .owl-carousel {
+      width: 300px;
       top: 240px;
-      margin: 0 15px;
+      margin-left: -5px;
     }
   }
 
   .photo-grid {
     .pizza-photos {
-      padding-top: 160px;
+      padding-top: 190px;
     }
 
     .photo-inner {
@@ -278,7 +278,7 @@
 
   .booking-form {
     width: 330px;
-    margin-left: -20px;
+    margin-left: -25px;
 
     .date-picker {
       margin: 0 10px 0 -10px;
@@ -383,25 +383,32 @@
   }
 
   .slider {
+    padding: 0 20px;
+
     .slide-photo {
       padding-top: 80px;
 
       .photo {
         img {
-          width: 310px;
+          width: 270px;
         }
       }
     }
 
     .owl-carousel {
+      width: 300px;
       top: 240px;
-      margin: 0 5px;
+      margin-left: -15px;
+    }
+
+    p {
+      font-size: 9px;
     }
   }
 
   .photo-grid {
     .pizza-photos {
-      padding-top: 160px;
+      padding-top: 190px;
     }
 
     .photo-inner {
